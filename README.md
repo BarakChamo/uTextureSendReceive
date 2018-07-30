@@ -4,6 +4,7 @@
 This is a small package that provides a threaded interface for sending and receiving any Unity texture over TCP/IP.
 It can be used to stream video, webcams as well as any 2D or Render texture, like parts of your visuals, minimaps, etc.
 
+Check out these examples of the same app streaming and receiving with a 20k-count particle-system running uninterrupted in the background ;)
 ###### Streaming live webcam feed 
 ![Streaming live webcam feed](https://user-images.githubusercontent.com/2883345/43383106-efb38c1a-9414-11e8-94bf-eff527537fbd.gif)
 

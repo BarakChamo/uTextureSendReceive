@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/TextureSendRecieve/Example/WebcamSendReceiveExample.unity
+  isLoaded: 1
+  isActive: 1

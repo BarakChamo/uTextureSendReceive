@@ -4,7 +4,7 @@
 This is a small package that provides a threaded interface for sending and receiving any Unity texture over TCP/IP.
 It can be used to stream video, webcams as well as any 2D or Render texture, like parts of your visuals, minimaps, etc.
 
-### Features
+## Features
 1. Simple texture-based interface for sending images/video/textures/etc. over TCP/IP.
 2. Threaded sending and receiving for improved performance of the rest of the project.
 3. Configurable encoding and quality settings.
@@ -34,7 +34,7 @@ Check out the `VideoFileSender` file to learn how to use `uTextureSendReceive` w
 #### Camera texture streaming example
 `Coming soon.`
 
-### Setup and Usage
+## Setup and Usage
 To begin using the package add a `TextureReceiver` or `TextureSender` component to your project.
 Both components share some common properties, such as the `port` used for TCP/IP connection and the `Message byte length` that indicates the size of each video chunk sent and received.
 
@@ -107,7 +107,7 @@ void Start () {
 ...
 ```
 
-### Usage tips
+## Usage tips
 #### Sending and receiving multiple sources
 You can initialize as many `TextureReceiver` and `TextureSender`s as you want and handle more than one receiving or sending source.
 An example for multi-sending and multi-receiving will be added soon.

@@ -7,6 +7,13 @@ It can be used to stream video, webcams as well as any 2D or Render texture, lik
 ###### Streaming live webcam feed 
 ![Streaming live webcam feed](https://user-images.githubusercontent.com/2883345/43383106-efb38c1a-9414-11e8-94bf-eff527537fbd.gif)
 
+###### Streaming a Video Player
+![Streaming a Video Player](https://user-images.githubusercontent.com/2883345/43383267-7aab799a-9415-11e8-8c53-ec0fd8eac7b8.gif)
+
+###### Streaming in-game Camera view
+![Streaming in-game Camera view](https://user-images.githubusercontent.com/2883345/43383267-7aab799a-9415-11e8-8c53-ec0fd8eac7b8.gif)
+
+
 ## Features
 1. Simple texture-based interface for sending images/video/textures/etc. over TCP/IP.
 2. Threaded sending and receiving for improved performance of the rest of the project.
@@ -18,6 +25,8 @@ To install the package head to the [releases section](https://github.com/BarakCh
 
 Follow [these instructions](https://docs.unity3d.com/Manual/AssetPackages.html) to import the custom package into your project.
 The package should show up under `TextureSendReceive` in your project's `Assets folder`.
+
+![capture](https://user-images.githubusercontent.com/2883345/43383219-4b7a6ad2-9415-11e8-8a51-a80df2ff1954.PNG)
 
 ### Example scenes
 Example usage scenes are provided in the `Example` folder and show a range of use cases for the libary, how to set up streaming and
@@ -52,6 +61,8 @@ The texture sender component accepts connection from receivers for streaming and
 Once the `sendTexture`, an instance of `2DTexture`, is assigned with a `SetSourceTexture(Texture2D sendTexture)` the TextureSender
 will send the contents of the texture once per frame.
 
+![captu1re](https://user-images.githubusercontent.com/2883345/43383251-6b94e04a-9415-11e8-97ae-79c5f97101ba.PNG)
+
 ##### Configuration
 Begin by adding a `TextureSender` component to a new or existing `GameObject` and configure the `port` and `Encoding`. By default, the component is configured to encode textures as JPGs. It's recommended that you stick to JPGs unless strictly required as this cuts the encoding size by roughly half.
 
@@ -82,6 +93,8 @@ void Start () {
 
 #### TextureReceiver
 The texture sender component connects to remote senders and accepts texture frames over TCP/IP, currently there's no distinction between senders to handle multiple sources but that might change in the future.
+
+![ca2pture](https://user-images.githubusercontent.com/2883345/43383250-6b698422-9415-11e8-8ec1-e7dde139b48a.PNG)
 
 Once the `receiveTexture`, an instance of `2DTexture`, is assigned with a `SetTargetTexture(Texture2D sendTexture)` the TextureReceiver
 will write each received frame to the target texture. Note that the texture will be automatically resized to fit the received frame.

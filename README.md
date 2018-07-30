@@ -114,3 +114,5 @@ An example for multi-sending and multi-receiving will be added soon.
 
 #### Switching sources and targets
 The source and target textures can be swapped on the fly by making calls to `SetSourceTexture` and `SetTargetTexture` at runtime.
+
+Made by [Barak Chamo](github.com/BarakChamo), released under [MIT License](https://github.com/BarakChamo/uTextureSendReceive/blob/master/LICENSE).

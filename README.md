@@ -11,7 +11,7 @@ It can be used to stream video, webcams as well as any 2D or Render texture, lik
 ![Streaming a Video Player](https://user-images.githubusercontent.com/2883345/43383267-7aab799a-9415-11e8-8c53-ec0fd8eac7b8.gif)
 
 ###### Streaming in-game Camera view
-![Streaming in-game Camera view](https://user-images.githubusercontent.com/2883345/43383267-7aab799a-9415-11e8-8c53-ec0fd8eac7b8.gif)
+![Streaming in-game Camera view](https://user-images.githubusercontent.com/2883345/43383475-14dd1744-9416-11e8-8fb7-7bc69258b7f1.gif)
 
 
 ## Features

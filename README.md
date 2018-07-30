@@ -8,7 +8,7 @@ It can be used to stream video, webcams as well as any 2D or Render texture, lik
 1. Simple texture-based interface for sending images/video/textures/etc. over TCP/IP.
 2. Threaded sending and receiving for improved performance of the rest of the project.
 3. Configurable encoding and quality settings.
-4. Example Webcam and Video file components and scenes (Game texture sending example coming soon).
+4. Example Webcam, Video Player and in-game Camera streaming components and scenes.
 
 ## Installation
 To install the package head to the [releases section](https://github.com/BarakChamo/uTextureSendReceive/releases) and download the latest release `.unitypackage`.
@@ -17,7 +17,8 @@ Follow [these instructions](https://docs.unity3d.com/Manual/AssetPackages.html) 
 The package should show up under `TextureSendReceive` in your project's `Assets folder`.
 
 ### Example scenes
-Example usage scenes are provided in the `Example` folder.
+Example usage scenes are provided in the `Example` folder and show a range of use cases for the libary, how to set up streaming and
+how to use incoming textures in Unity scenes.
 
 All projects are set up with a sender and a receiver and a 20,000-count particle-system that runs smoothly when sending and receiving 720p video on an MSI laptop with a 260GhZ i7 and GTX970M running Windows 10. 
 
@@ -32,7 +33,10 @@ The video file example sends a receives a RenderTexture from a `VideoPlayer`.
 Check out the `VideoFileSender` file to learn how to use `uTextureSendReceive` with a `VideoPlayer`, `VideoClip`s and Unity's `RenderTexture` mode for video playback.
 
 #### Camera texture streaming example
-`Coming soon.`
+The camera example sends a receives an in-game camera RenderTexture from a `Camera` aimed at the test particle system.
+
+Check out the `CameraSender` file to learn how to use `uTextureSendReceive` with a `Camera` and Unity's `RenderTexture` mode for streaming the view from in-game cameras.
+
 
 ## Setup and Usage
 To begin using the package add a `TextureReceiver` or `TextureSender` component to your project.
